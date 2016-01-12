@@ -1,0 +1,47 @@
+/* Styling for Cornell Ascend*/
+
+/* Orange: #FF9733
+   Grey: #999999 */
+
+html, body {
+  height: 100%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+}
+
+.navLogo{
+	padding-top: 12px;
+	width:200px;
+	height: auto;
+	padding-bottom: 12px;
+}
+
+#myNavbar {
+    position: relative;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+#myNavbar .nav {
+	font-size: 18px;
+    position: absolute; 
+    bottom: 0; 
+    right: 30px;
+    margin-bottom: -2px;
+}
+
+.view{
+	/*padding-top: 70px;*/
+}
+
+#logoText{
+	font-size: 25px;
+	position: absolute; 
+    bottom: 0; 
+    left: 230px;
+    margin-bottom: 25px;
+}
+
+.jumbotron{
+	height:70%;
+	padding-left: 30px;
+}
