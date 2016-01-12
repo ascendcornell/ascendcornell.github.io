@@ -29,6 +29,11 @@ html, body {
     margin-bottom: -2px;
 }
 
+/*for access on hover*/
+.dropdown:hover .dropdown-menu {
+	display: block;
+}
+
 .view{
 	/*padding-top: 70px;*/
 }
