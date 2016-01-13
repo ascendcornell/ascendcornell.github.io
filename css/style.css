@@ -107,6 +107,14 @@ html, body {
   background-position: center; 
 }
 
+.about{
+  background-color: transparent;
+  background-image: url('../resources/excess/eboard.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; 
+}
+
 .national{
   background-color: transparent;
   background-image: url('../resources/events/national.jpg');
@@ -117,5 +125,6 @@ html, body {
 
 .title{
   padding-top:0px; 
-  margin-left: 20px
+  margin-left: 20px;
+  position:absolute;
 }
