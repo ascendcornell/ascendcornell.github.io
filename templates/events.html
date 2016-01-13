@@ -1,13 +1,12 @@
 <div class="jumbotron">
 	<h1>Events</h1>
 
-	<div style="height: 305px">
+	<div>
 	  <uib-carousel interval="myInterval" no-wrap="noWrapSlides">
 	    <uib-slide ng-repeat="slide in slides" active="slide.active" index="slide.id">
-	      <img ng-src="{{slide.image}}" style="margin:auto;"> </img>
+	      <img ng-src="{{slide.image}}" style="margin:auto; height:300px;"> </img>
 	      <div class="carousel-caption">
-	        <h4>Slide {{slide.id}}</h4>
-	        <p>{{slide.text}}</p>
+	        <h2 style="color:white">{{slide.text}}</h2>
 	      </div>
 	    </uib-slide>
 	  </uib-carousel>

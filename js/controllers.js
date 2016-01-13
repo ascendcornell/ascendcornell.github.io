@@ -17,18 +17,18 @@ controllers.controller('events.ctrl', ["$scope", function($scope){
   $scope.addSlide = function() {
     var newWidth = 600 + slides.length + 1;
     slides.push({
-  		image:"resources/logo.png",
-  		text: "hello",
+  		image:"resources/events/seniorPanel2.jpg",
+  		text: "Senior Student Panel",
   		id: 0
   	},
   	{
-  		image:"resources/events/seniorPanel.jpg",
-  		text: "hello",
+  		image:"resources/logo.png",
+  		text: "Mentorship",
   		id: 1
   	},
   	{
   		image:"resources/logo.png",
-  		text: "hello",
+  		text: "National Convention",
   		id: 2
   	});
   };
