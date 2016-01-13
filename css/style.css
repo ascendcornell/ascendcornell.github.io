@@ -36,7 +36,11 @@ html, body {
 }
 
 .view{
-	/*padding-top: 70px;*/
+	background-color: transparent;
+  background-image: url('../resources/mainBack.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; 
 }
 
 #logoText{
@@ -62,3 +66,25 @@ html, body {
 }
 
 .nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
+.textBox{
+  background-color: white;
+  border-radius: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-top: 10px;
+}
+
+
+
+/*Section Specifics*/
+.mainText{
+  position: absolute; 
+  bottom: 70px;
+  right:170px; 
+  width:60%;
+}
+
+.mainText p{
+  font-size: medium;
+}
