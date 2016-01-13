@@ -1,5 +1,12 @@
 var app = angular.module('main', ['ctrls', 'ngRoute']);
 
+app.run(function($rootScope, $location, $anchorScroll, $routeParams) {
+  $rootScope.$on('$routeChangeSuccess', function(newRoute, oldRoute) {
+    $location.hash($routeParams.scrollTo);
+    $anchorScroll();  
+  });
+});
+
 app.config(function($routeProvider){
   $routeProvider.when("/",
     {

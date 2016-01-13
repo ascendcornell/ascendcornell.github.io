@@ -45,10 +45,12 @@ html, body {
 
 #logoText{
 	font-size: 25px;
-	position: absolute; 
+	position: absolute;
+  color: #FF9733; 
     bottom: 0; 
-    left: 300px;
-    margin-bottom: 25px;
+    left: 290px;
+    margin-bottom: 35px;
+    z-index: 4;
 }
 
 .jumbotron{
@@ -59,10 +61,15 @@ html, body {
 
   margin-left: 50px;
   margin-right: 50px;
+  background-color: transparent;
 }
 
 .jumbotron h1, h2 {
   color: #FF9733;
+}
+
+.jumbotron p{
+  font-size: medium;
 }
 
 .nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
@@ -76,6 +83,14 @@ html, body {
 }
 
 
+#nav ul li ul, #nav ul li:hover ul {
+    float:right;
+    margin-right:2px; /*optional*/
+}
+
+@media all and (max-width: 600px) {
+    #logoText { display: none; }
+}
 
 /*Section Specifics*/
 .mainText{
@@ -85,6 +100,10 @@ html, body {
   width:60%;
 }
 
-.mainText p{
-  font-size: medium;
+.signUpBtn{
+  margin-top: 80px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: transparent;
 }
