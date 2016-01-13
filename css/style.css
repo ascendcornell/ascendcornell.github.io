@@ -60,3 +60,5 @@ html, body {
 .jumbotron h1, h2 {
   color: #FF9733;
 }
+
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
