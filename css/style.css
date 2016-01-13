@@ -6,6 +6,7 @@
 html, body {
   height: 100%;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+  color:#999999;
 }
 
 .navLogo{
@@ -42,11 +43,20 @@ html, body {
 	font-size: 25px;
 	position: absolute; 
     bottom: 0; 
-    left: 230px;
+    left: 300px;
     margin-bottom: 25px;
 }
 
 .jumbotron{
+  padding-top: 5px;
 	height:70%;
-	padding-left: 30px;
+	padding-left: 40px;
+  padding-right: 40px;
+
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.jumbotron h1, h2 {
+  color: #FF9733;
 }
