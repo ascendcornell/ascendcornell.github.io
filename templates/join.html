@@ -18,9 +18,9 @@
 	<h2> Mailing List </h2>
 	<p> Interested in joining Ascend? Make sure to add your name to the mailing list below to get e-mails about our club events and opportunities! </p>
 	<div class="input-group">
-	  <input type="text" class="form-control" placeholder="First Name">
-	  <input type="text" class="form-control" placeholder="Last Name">
-	  <input type="text" class="form-control" placeholder="E-mail">
-	  <button type="button" class="btn btn-default navbar-btn">Join!</button>
+	  <input type="text" class="form-control" ng-model="first" placeholder="First Name">
+	  <input type="text" class="form-control" ng-model="last" placeholder="Last Name">
+	  <input type="text" class="form-control" ng-model="email" placeholder="E-mail (e.g. abs123@cornell.edu)">
+	  <button type="button" class="btn btn-default navbar-btn" ng-click="add()">Join!</button>
 	</div>
 </div>

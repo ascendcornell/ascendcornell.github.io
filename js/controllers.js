@@ -74,6 +74,32 @@ controllers.controller('events.ctrl', ["$scope", function($scope){
 
 }]);
 
-controllers.controller('join.ctrl', ["$scope", function($scope){
-	
+controllers.controller('join.ctrl', ["$scope", "$http", function($scope, $http){
+	  $scope.first = "";
+    $scope.last = "";
+    $scope.email = "";
+
+    $scope.add=function () {
+        $http({
+            method: 'POST',
+            url: 'https://sheetsu.com/apis/47921c28',
+            headers: {
+                'Content-Type': "application/json"
+            },
+            data: {
+                "first": $scope.first,
+                "last": $scope.last,
+                "email": $scope.email,
+            }
+        }).then(function success(resp){
+            console.log(resp);
+        }, function error(resp){
+            console.log(resp);
+        });
+
+        //Clear the fields
+        $scope.first= "";
+        $scope.last = "";
+        $scope.email="";
+      };
 }]);
