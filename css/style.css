@@ -92,11 +92,12 @@ html, body {
 }
 
 .signUpBtn{
-  margin-top: 80px;
+  margin-top: 120px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  background-color: transparent;
+  background-color: white;
+  color:#FF9733;
 }
 
 .view{
@@ -110,6 +111,14 @@ html, body {
 .about{
   background-color: transparent;
   background-image: url('../resources/excess/eboard.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; 
+}
+
+.join{
+  background-color: transparent;
+  background-image: url('../resources/join.jpg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center; 
