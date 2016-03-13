@@ -27,9 +27,16 @@
 
 <!-- For Future Use -->
     <script>
+
+    var key = 0;
+
   function play(){
        var audio = document.getElementById("audio");
-       audio.play();
+       if(key==0){
+        audio.play();
+        key = key+1;
+       }
+       
                  }
    </script>
 
