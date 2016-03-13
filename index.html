@@ -25,6 +25,14 @@
     <![endif]-->
   </head>
 
+<!-- For Future Use -->
+    <script>
+  function play(){
+       var audio = document.getElementById("audio");
+       audio.play();
+                 }
+   </script>
+
   <nav class="navbar navbar-default" id="myNavbar">
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
@@ -49,7 +57,7 @@
             <ul class="dropdown-menu dropdown-menu-right">
               <li><a href="#/about/professional">Professional Development</a></li>
               <li><a href="#/about/marketing">Marketing</a></li>
-              <li><a href="#/about/internal">Internal Affairs</a></li>
+              <li><a href="#/about/internal" onclick="play()">Internal Affairs</a></li>
               <li><a href="#/about/career">Career Development</a></li>
             </ul>
           </li>
@@ -70,6 +78,8 @@
   <body ng-app="main">
 
     <ng-view></ng-view>
+
+<audio id="audio" src="./resources/ping.mp3"></audio>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

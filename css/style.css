@@ -137,3 +137,11 @@ html, body {
   margin-left: 20px;
   position:absolute;
 }
+
+.professional{
+  background-color: transparent;
+  background-image: url('../resources/excess/cute.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; 
+}

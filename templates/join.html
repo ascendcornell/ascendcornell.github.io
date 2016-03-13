@@ -1,4 +1,4 @@
-<div class="jumbotron join">
+<div class="jumbotron join" ng-init="overflow=0">
 	<h1 class="textBox title"> Join Cornell Ascend!</h1>
 	<diV class="textBox mainText">
 		<p> We provide</p>
@@ -16,11 +16,13 @@
 
 <div class="jumbotron" id="mail" style="padding-top:90px">
 	<h2> Mailing List </h2>
-	<p> Interested in joining Ascend? Make sure to add your name to the mailing list below to get e-mails about our club events and opportunities! </p>
-	<div class="input-group">
+	<p ng-click="overflow=overflow+3"> Interested in joining Ascend? Make sure to add your name to the mailing list below to get e-mails about our club events and opportunities! </p>
+	<div class="input-group" ng-hide="overflow>7">
 	  <input type="text" class="form-control" ng-model="first" placeholder="First Name">
 	  <input type="text" class="form-control" ng-model="last" placeholder="Last Name">
 	  <input type="text" class="form-control" ng-model="email" placeholder="E-mail (e.g. abs123@cornell.edu)">
 	  <button type="button" class="btn btn-default navbar-btn" ng-click="add()">Join!</button>
 	</div>
+
+	<img ng-show="overflow>7" src="https://scontent-yyz1-1.xx.fbcdn.net/hphotos-xpa1/v/t1.0-0/p235x350/10378276_1111280978924481_9171738524684780746_n.jpg?oh=f70dcac93b3f2d92a3ff516974f37403&oe=5788B3A4" style="width:1080px;height:auto;">
 </div>
